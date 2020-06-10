@@ -1,4 +1,4 @@
-# Postgres
+# :elephant: Postgres
 
 - Up and Run
 
