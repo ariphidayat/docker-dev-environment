@@ -2,7 +2,8 @@
 
 ## Dev Environment List
 
-:elephant: [Postgres](https://github.com/ariphidayat/docker-dev-environment/tree/master/postgres)
+### :elephant: [Postgres](https://github.com/ariphidayat/docker-dev-environment/tree/master/postgres)
+### :postbox: [Redis](https://github.com/ariphidayat/docker-dev-environment/tree/master/redis)
 
 
 ## Useful Commands
