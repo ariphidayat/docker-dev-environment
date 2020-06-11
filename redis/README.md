@@ -44,27 +44,28 @@
 
     https://raw.githubusercontent.com/antirez/redis/6.0.5/redis.conf
 
+
 ## Configuration Note
 
-    - Network Security
+- Network Security
 
-        go to **`NETWORK`**  section in **redis.conf** file, `bind` one or more IP addresses if you want listens from spesific IP addresses or comment all bind to listens for connections from all the network interfaces.
+    go to **`NETWORK`**  section in **redis.conf** file, `bind` one or more IP addresses if you want listens from spesific IP addresses or comment all bind to listens for connections from all the network interfaces.
 
-        `protected-mode yes` to avoid open accessed and exploited on the internet.
+    `protected-mode yes` to avoid open accessed and exploited on the internet.
 
-    - Authentication and Authorization
+- Authentication and Authorization
 
-        add ACL rule on  **`SECURITY`** section in **redis.conf** file with the following format:
+    add ACL rule on  **`SECURITY`** section in **redis.conf** file with the following format:
 
-        ```
-        user [username] ... acl rules ... >[password]
-        ```
+    ```
+    user [username] ... acl rules ... >[password]
+    ```
 
-        :bulb: Should add default user +@connection for auth process
+    :bulb: Should add default user +@connection for auth process
 
-    - Client Connection
+- Client Connection
 
-        ```bash
-        # redis-cli -h [redis server host or docker container name]
-        [redis-server]:6379> auth [username] [password]
-        ```
+    ```bash
+    # redis-cli -h [redis server host or docker container name]
+    [redis-server]:6379> auth [username] [password]
+    ```
