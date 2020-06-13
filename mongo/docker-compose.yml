@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  mongo:
+    container_name: mongo
+    image: mongo:4.2.7
+    command: mongod
+    ports:
+      - 27017:27017
+    volumes: 
+      - data:/data/db
+
+volumes: 
+  data:
